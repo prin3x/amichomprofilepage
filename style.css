@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&display=swap');
+
+
 :root {
   --yellow: #ffc778;
   --purple: #6c74d1;
@@ -221,6 +224,7 @@ a.nav-link {
   width: 100%;
   padding: 2rem 15rem;
   position: relative;
+
 }
 .greeting__wrapper:nth-child(2) {
   flex-direction: row-reverse;
@@ -376,8 +380,8 @@ a.nav-link {
   background: var(--yellow);
   width: 600vw;
   position: absolute;
-  height: 10rem;
-  bottom: 0;
+  height: 5rem;
+  bottom: -10%;
   left: 0;
 }
 
@@ -410,7 +414,7 @@ a.nav-link {
   }
 
   .showcase-app{
-      height: 30rem;
+      height: 40rem;
   }
 
   .d-flex{
@@ -437,8 +441,7 @@ a.nav-link {
     top: -7%;
   }
 
-  .app-content-3{
-  }
+
 
   .huawei{
     margin: 0.5rem 0.5rem;
@@ -557,6 +560,13 @@ z-index: 0;
     width: 12.5rem;
     padding: 1.5rem 1.5rem;
     align-items: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 200ms ease-in-out;
+  }
+  .icon_and_content_container:hover{
+    color: #000;
+    transform: scale(1.1);
   }
 
   .title{
@@ -572,6 +582,7 @@ z-index: 0;
 
   .jobexpress-color{
     color: #1F325F;
+    font-weight: 700;
   }
 
   .purple-text{
@@ -650,14 +661,7 @@ z-index: 0;
     top: -25px;
     right: 0;
   }
-
-  .heading {
-    font-weight: 700;
-    padding: 1rem 0;
-  }
-
-  .pink-text{
-    color: #EDBDB2;
+  .web-showcase{
     font-weight: 500;
   }
 
@@ -858,4 +862,147 @@ z-index: 0;
   100% {
     transform: rotate(360deg);
   }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1300px){
+  .greeting__wrapper{
+    padding: 2rem 5rem;
+
+  }
+
+  .shortdot-2{
+    left: -30%;
+  }
+
+  .salebox{
+    width: 18rem;
+  }
+
+  .sasom{
+    width: 17rem;
+  }
+  .sasom-text{
+    font-family: 'Kanit';
+  }
+
+  .img-naremit{
+    width: 20rem;
+  }
+
+  .daruma-2{
+    width: 20rem;
+  }
+  .mobile{
+    width: 20rem;
+  }
+
+  .yaksri{
+    width: 20rem;
+  }
+  .ui-back{
+    width: 22.5rem;
+  }
+
+  .content-2{
+    width: 20rem;
+  }
+
+}
+
+@media screen and (max-width: 1000px){
+  .brush-left,
+  .plant-right{
+    display: none;
+  }
+  .hero-w{
+    max-width: 90vw;
+  }
+  .bg-2 {
+    height: 30vh;
+  }
+  .unchi-top,
+  .unchi-bottom{
+    width: 10rem;
+  }
+  .grey-circle{
+    width: 1rem;
+  }
+  .showcase__partialbg{
+    width: 90%;
+  }
+  .showcase__intro {
+    z-index: 5;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+  }
+  .unique{
+    padding: 1rem 4rem;
+  }
+  .hightlight{
+    color: var(--purple);
+  }
+  .cta{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 770px){
+  .hero-w{
+    max-width: 80vw;
+  }
+  .img-w{
+    width: 14rem;
+  }
+
+  .bg-2 {
+    height: 20vh;
+  }
+  .showcase__partialbg{
+    height: 25rem;
+  }
+  .introduce{
+    position: relative;
+    flex-direction: row;
+  }
+  .bg-app{
+    flex-direction: row;
+  }
+  .column-app{
+    flex-direction: column;
+  }
+
+  .app-h{
+    height: 30vh;
+  }
+  .name-app{
+    margin-right: 0;
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+.web-showcase{
+  height: 20rem;
+}
+.shortdot{
+  display: none;
+}
+.hero4{
+  width: 20rem;
+}
+.greeting__wrapper{
+  padding: 1rem;
+}
+.google{
+  width: 5rem;
+}
+.huawei{
+  width: 4rem;
+}
+.huawei:nth-child(3){
+  width: 5rem;
+}
+.unique{
+  padding: 1rem 3rem;
+}
 }
