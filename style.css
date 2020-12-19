@@ -417,6 +417,14 @@ a.nav-link {
       height: 40rem;
   }
 
+  .backoffice-showcase{
+    height: 30rem;
+  }
+
+  .salebox-box{
+    padding-left: 7rem;
+  }
+
   .d-flex{
       display: flex;
       flex-direction: row;
@@ -504,12 +512,15 @@ z-index: 0;
 
   .cloud-2{
     position: absolute;
-    top: 25%;
+    top: 30%;
     left: 15%;
     animation: cloud-2 10s linear infinite;
   }
 
   .cloud-3{
+    position: absolute;
+    right: 25%;
+    bottom: 10%;
     animation: cloud-2 6s linear infinite;
     animation-delay: 0.2s;
   }
