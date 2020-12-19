@@ -558,7 +558,7 @@ z-index: 0;
 
   .icon_and_content_container{
     width: 12.5rem;
-    padding: 1.5rem 1.5rem;
+    padding: 0 1.5rem;
     align-items: center;
     text-decoration: none;
     color: inherit;
